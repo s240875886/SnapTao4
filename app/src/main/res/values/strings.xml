@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">淘起来</string>
+    <string name="info1_text">如何操作该点</string>
+    <string name="info1_edit">编辑</string>
+    <string name="info1_delete">删除</string>
+    <string name="dig_edit_title">编辑店铺</string>
+    <string name="dig_edit_title1">添加图片</string>
+    <string name="dig_edit_takephoto">拍照</string>
+    <string name="dig_edit_choosephoto">从相册中选取</string>
+    <string name="dig_edit_submit">提交</string>
+    <string name="dig_edit_cancle">取消</string>
+    <string name="dig_edit_shopnamehint">添加店铺名字</string>
+    <string name="dig_edit_shopaddhint">添加地址</string>
+    <string name="dig_edit_shoptelhint">添加电话</string>
+    <string name="dig_edit_shopmarkhint">添加备注(此项可不填)</string>
+    <string name="btn_login">登录</string>
+    <string name="getUrl">http://jetso.hintmint.com.cn/api/GetDiscounts</string>
+    <string name="getImg">http://jetso.hintmint.com.cn</string>
+</resources>

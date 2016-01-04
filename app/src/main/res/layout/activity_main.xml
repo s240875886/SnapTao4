@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/infowindow1_but"
+            android:text="@string/btn_login"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title" />
+
+        <LinearLayout
+            android:id="@+id/btn_refresh"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/infowindow1_but"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/refresh" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/menu"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/mapboxMapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        mapbox:access_token="pk.eyJ1Ijoid2Vud2Vud2VuODg4IiwiYSI6ImNpaHpreGl3ZTA0Zjd0ZmtoOHZxNnhmd3EifQ.hQossoVi-cIVvGfPrZtDxQ" />
+
+    <Button
+        android:id="@+id/but_mylocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/mapboxMapView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/notmylocation" />
+</RelativeLayout>

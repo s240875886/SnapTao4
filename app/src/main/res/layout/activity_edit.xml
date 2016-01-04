@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/background_e5"
+            android:gravity="center"
+            android:text="@string/dig_edit_title"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/dig_edit_title1"
+            android:textColor="@color/textcolor666"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/dialog_but_photo"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/dig_edit_takephoto"
+                android:textColor="@color/textcolor333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choose_photo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/dialog_but_photo"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/album" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/dig_edit_choosephoto"
+                android:textColor="@color/textcolor333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/shop" />
+
+            <EditText
+                android:id="@+id/edit_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center_vertical"
+                android:hint="@string/dig_edit_shopnamehint"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/address" />
+
+            <EditText
+                android:id="@+id/edit_shopaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center_vertical"
+                android:hint="@string/dig_edit_shopaddhint"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/edit_shoptel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center_vertical"
+                android:hint="@string/dig_edit_shoptelhint"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/remark" />
+
+            <EditText
+                android:id="@+id/edit_shopmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center_vertical"
+                android:hint="@string/dig_edit_shopmarkhint"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_cancle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_but_cancle"
+            android:text="@string/dig_edit_cancle"
+            android:textColor="@color/textcolor333" />
+
+        <Button
+            android:id="@+id/but_submit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_but_submit"
+            android:text="@string/dig_edit_submit"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+
+</RelativeLayout>
